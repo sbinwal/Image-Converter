@@ -76,26 +76,26 @@ const App = () => {
                         <div className="border-dashed border-2 border-gray-400 rounded-lg inline-block p-8 mb-4 w-full">
                         {image &&     <img src={image.data} alt={image.name} className="max-w-full" />}
                         </div>
-                        <div className='flex gap-4'>
-                        <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded mr-2" onClick={handleDelete}>
+                        <div className='grid grid-cols-2 gap-4'>
+                        <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 rounded w-[20%] col-span-2 justify-self-center" onClick={handleDelete}>
                             Delete
                         </button>
-                        <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded" onClick={generatePDF}>
+                        <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded w-full" onClick={generatePDF}>
                             Convert to PDF
                         </button>
-                        <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded ml-2" onClick={() => convertImage('JPEG')}>
+                        <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded w-full" onClick={() => convertImage('JPEG')}>
                             Convert to JPEG
                         </button>
-                        <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded ml-2" onClick={() => convertImage('JPG')}>
+                        <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded w-full" onClick={() => convertImage('JPG')}>
                             Convert to JPG
                         </button>
-                        <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded ml-2" onClick={() => convertImage('PNG')}>
+                        <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded w-full" onClick={() => convertImage('PNG')}>
                             Convert to PNG
                         </button>
-                        <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded ml-2" onClick={() => convertImage('SVG')}>
+                        <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded w-full" onClick={() => convertImage('SVG')}>
                             Convert to SVG
                         </button>
-                        <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded ml-2" onClick={() => convertImage('WEBP')}>
+                        <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded w-full" onClick={() => convertImage('WEBP')}>
                             Convert to WEBP
                         </button>
                         </div>
@@ -103,7 +103,7 @@ const App = () => {
                     </div>
              
             </div>
-            <div className='flex justify-center bg-black fixed bottom-0 left-0 right-0 p-5 text-white '>© 2024 Image Converter. All Rights Reserved | Managed by Sandeep</div>
+            <div className='flex justify-center bg-black fixed bottom-0 left-0 right-0 p-5 text-white '>© 2024 Image Converter. All Rights Reserved | Managed by Webkuu</div>
         </div>
     );
 };
