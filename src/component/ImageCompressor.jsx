@@ -104,7 +104,7 @@ function ImageCompressorComponent() {
     return (
         <div className="mainContainer bg-gray-100 min-h-screen py-8">
             <div className="max-w-4xl mx-auto">
-                <nav className="flex justify-between items-center bg-yellow-300 py-4 px-6 rounded-md shadow-md mb-8">
+                <nav className="flex justify-between items-center bg-red-300 py-4 px-6 rounded-md shadow-md mb-8">
                     <div>
                         <h1 className="text-xl font-bold flex items-center">
                             <FontAwesomeIcon icon={faImage} className="mr-2" />
